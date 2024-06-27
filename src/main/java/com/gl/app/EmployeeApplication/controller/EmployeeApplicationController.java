@@ -13,6 +13,7 @@ public class EmployeeApplicationController {
 
     @GetMapping
     public ResponseEntity<String> getEmployees(){
+        System.out.println("Employee Details");
         return new ResponseEntity<>("Employee details", HttpStatus.OK);
     }
 }
